@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Sinh Tung</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  <link rel="stylesheet" href="blog.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,662;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+  
+ 
+
+
+
+</style>
+</head>
+
+
+
+<body class="w3-light-grey w3-content" style="max-width: 1500px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width: 300px;" id="mySidebar"><br>
+    <div class="w3-logo">
+      <a href="index.html"><img src="code image/logo 2.png" class="w3-center w3-padding-64" style="width: 33%"></a>
+    </div> 
+    <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button">About me</a>
+    <a href="photo.html" onclick="w3_close()" class="w3-bar-item w3-button">Photography</a>
+    <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+
+    <div class="w3-bar-item w3-center w3-large w3-padding-64 w3-display-bottomleft">
+      
+      <a href="https://www.facebook.com/ngosinhtung/"><i class="fa fa-facebook-official w3-hover-opacity "></i></a>
+      <a href="https://www.instagram.com/gosihtug/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="#"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+      <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+    <p class="w3-small">Copyright 2022 by <a href="#" target="_blank" class="w3-hover-text-green">Sinh Tung Ngo</a></p>
+    </div>
+
+   </nav>
+
+   <!-- Top menu on small screens -->
+   <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-16">
+      <a href="index.html"><img src="code image/logo 2.png" class="w3-left w3-padding" style="width: 15%"></a>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-black" onclick="w3_open()">☰</a>
+   </header>
+
+   <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-top w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Push down content on small screens --> 
+    <div class="w3-hide-large" style="margin-top:50px;"></div>
+
+   
+  
+  <!-- Image header -->
+ 
+<header class="w3-display-container w3-content w3-xlarge w3-wide" style="max-width:1500px;" id="home">
+
+  <div class="container">
+  <div class="box">
+    <img src="code image/DSC_7803.png">
+    
+  </div>
+  <div class="box">
+    <img src="code image/DSC_7797.png">
+    
+  </div>
+  <div class="box">
+    <img src="code image/c5.png">
+    
+  </div>
+  <div class="box">
+    <img src="code image/DSC_6614.png">
+   
+  </div>
+  <div class="box">
+    <img src="code image/DSC_6996.png">
+   
+  </div>
+    
+</header>
+
+
+
+<div class="w3-container w3-light-grey w3-text-dark-grey w3-padding-32" id="about">
+
+      <div class="w3-content w3-justify w3-body" style="max-width:600px">
+         <div class="w3-center">
+          <h2 class="w3-text-dark-grey " style="margin-left: 15px; font-family: 'Quicksand', sans-serif;  ">Những chuyến đi</h2>
+          <p style="font-family: 'Quicksand', sans-serif;  font-size: 13px;">"Vì cuộc đời này thật đẹp. Ta lưu giữ nó ở đây, kể cho bản thân nghe về những khoảnh khắc. Ta thấy cuộc đời đẹp, đẹp cả những cơn dông"</p>
+          <br>
+          
+          </div>
+
+  <div class="page-content w3-content w3-justify">
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Tà Xùa</h2>
+      <p  class="copy" style="font-family: 'Quicksand', sans-serif; ">Nếu coi những áng mây là một loại trang sức, thì Tà Xùa hẳn là một phú hào giàu có.</p>
+      <a href="https://drive.google.com/drive/u/0/folders/1nIoGYdAkYXLSgSvH1hsKQEeykflYpsZF"><button class="btn">View trips</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Hà Giang</h2>
+      <p class="copy" style="font-family: 'Quicksand', sans-serif; ">Vẻ đẹp say đắm lòng người được tạo nên từ vẻ bề ngoài khô cằn, khắc nghiệt</p>
+      <a href="https://drive.google.com/drive/u/0/folders/1nIoGYdAkYXLSgSvH1hsKQEeykflYpsZF"><button class="btn">View trips</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Mộc Châu</h2>
+      <p class="copy" style="font-family: 'Quicksand', sans-serif; ">Cao nguyên bình dị, bình yên. </p>
+      <a href="https://drive.google.com/drive/u/0/folders/1nIoGYdAkYXLSgSvH1hsKQEeykflYpsZF"><button class="btn">View trips</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Sa Pa</h2>
+      <p class="copy" style="font-family: 'Quicksand', sans-serif; ">Sapa giống như nàng minh tinh của vùng Tây Bắc, ai cũng muốn được gặp gỡ một lần.</p>
+      <a href="https://drive.google.com/drive/u/0/folders/1nIoGYdAkYXLSgSvH1hsKQEeykflYpsZF"><button class="btn">View trips</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Phú Quốc</h2>
+      <p class="copy" style="font-family: 'Quicksand', sans-serif; ">Về với biển cả, có bình dị, có hào nhoáng, có ồn ào và rất thơ.</p>
+      <a href="https://drive.google.com/drive/u/0/folders/1nIoGYdAkYXLSgSvH1hsKQEeykflYpsZF"><button class="btn">View trips</button></a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Hà Nội</h2>
+      <p class="copy" style="font-family: 'Quicksand', sans-serif; ">Nghìn năm văn hiến, nét Tràng An chẳng phai mờ.</p>
+      <a href="https://drive.google.com/drive/u/0/folders/1nIoGYdAkYXLSgSvH1hsKQEeykflYpsZF"><button class="btn">View trips</button></a>
+    </div>
+  </div>
+</div>
+
+        
+       </div>
+
+
+
+
+ <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center" style="max-width: 600px">
+
+      <a href="https://www.facebook.com/ngosinhtung/"><i class="fa fa-facebook-official w3-hover-opacity "></i></a>
+      <a href="https://www.instagram.com/gosihtug/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="#"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
+      <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+    <p class="w3-medium">Copyright 2021 by <a href="#" target="_blank" class="w3-hover-text-green">Sinh Tung Ngo</a></p>
+  <!-- End footer -->
+  </footer>
+
+     </div>
+    </div>
+
+
+
+    <!-- End page content -->
+
+
+
+    <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+  
+
+</body>
+</html>
