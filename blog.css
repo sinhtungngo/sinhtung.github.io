@@ -87,10 +87,10 @@ html, body {
 }
 
 .card {
-  z-index: 0;
   position: relative;
   display: flex;
   align-items: flex-end;
+  z-index: 0;
   overflow: hidden;
   padding: 1rem;
   width: 100%;
@@ -130,13 +130,13 @@ html, body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url("code image/DSC_7803.png");
+  background-image: url("code image/c7.png");
 }
 .card:nth-child(2):before {
   background-image: url("code image/DSC_6614.png");
 }
 .card:nth-child(3):before {
-  background-image: url("code image/c7.png");
+  background-image: url("code image/DSC_7337.png");
 }
 .card:nth-child(4):before {
   background-image: url("code image/DSC_7797.png");
