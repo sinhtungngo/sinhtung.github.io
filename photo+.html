@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Sinh Tung</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,662;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,662;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <style>
   body , h1 , h2 , h3 {font-family: 'Urbanist', sans-serif;}
@@ -94,116 +98,80 @@ a { text-decoration: none; }
 
 
 
-/*
-=====
-DEPENDENCIES
-=====
-*/
 
-.r-link{
-  display: var(--rLinkDisplay, inline-flex) !important;
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
 }
 
-.r-link[href]{
-  color: var(--rLinkColor) !important;
-  text-decoration: var(--rLinkTextDecoration, none) !important;
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 18px;
+    color: #999;
 }
 
-.text-underlined{
-    --uiTextUnderlinedLineHeight: var(--textUnderlinedLineHeight, 2px); /* 1 */
-    --uiTextUnderlinedLineGap: var(--textUnderlinedLineGap, .5rem);
-    --uiTextUnderlinedPaddingBottom: calc(var(--uiTextUnderlinedLineHeight) + var(--uiTextUnderlinedLineGap));
-
-    padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
-    position: var(--textUnderlinedPosition, relative) !important;
-    z-index: var(--textUnderlinedZindex, 1) !important;
-
-    /*
-        1. I use pixels units because others units (em, rem, vw, vh, etc) can
-        lead to the mistake of displaying a circumcised line
-    */
+.tz-gallery {
+    padding: 0px;
 }
 
-.text-underlined::after{
-    content: "";
-    width: var(--textUnderlinedLineWidht, 100%) !important;
-    height: var(--uiTextUnderlinedLineHeight) !important;
-    background-image: var(--textUnderlinedBackgroundImage, linear-gradient(to top, var(--textUnderlinedLineColor, currentColor) 30%, rgba(255, 255, 255, 0) 45%)) !important; /* 1 */
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 1px;
+}
 
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
     position: absolute;
-    left: var(--textUnderlinedLineLeft, 0) !important;
-    bottom: var(--textUnderlinedLineBottom, 0) !important;
-    z-index: var(--textUnderlinedLineZindex, -1) !important;
-
-    /*
-     linkread
-    */
-}
-
-/*
-=====
-CORE
-=====
-*/
-
-.linkread{
-  --textUnderlinedLineHeight: 100%;
-  --textUnderlinedLineGap: 0;
-  --textUnderlinedLineColor: #fed330;
-  
-  padding-left: .75rem;
-  padding-right: .75rem;
-}
-
-.linkread::after{
-  will-change: width;
-  transition: width .1s ease-out;
-  transform: rotate(-2deg);
-  transform-origin: left bottom;
-}
-
-.linkread:hover{
-  --textUnderlinedLineWidht: 0;
-}
-
-.linkread:hover::after{
-  transition-duration: .15s;
-}
-
-/*
-* These styles for text decoration. The demo will be work without it
-*/
-
-.linkread{
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.linkread:focus{
-  outline: 2px solid #fed330;
-  outline-offset: .5rem;
-}
-
-/*
-=====
-DEMO
-=====
-*/
-
-:root{
-  --rLinkColor: #222;
-}
-
-.page{
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 25rem;
-  padding: 1rem;
-  margin: auto;
-  flex: none;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 13;
+    transition: 0.4s;
 }
 
 
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 5, 0.3);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
 
 
 
@@ -270,26 +238,56 @@ DEMO
           </div>
 
           <!-- Grid for photos -->
-          <div class="w3-row" >
+         <div class="container gallery-container" style="max-width:600px">
 
-            <div class="w3-col l6 s6">
-              <img src="code image/DSC_7803.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/c1.png" style="width:100%"onclick="onClick(this)">
-              <img src="code image/c5.png" style="width:100%"onclick="onClick(this)">
-              <img src="code image/DSC_6996.png" style="width:100%" onclick="onClick(this)">
-              
-              
+  
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="code image/DSC_7803.png">
+                    <img src="code image/DSC_7803.png" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="code image/DSCF2080.png">
+                    <img src="code image/DSCF2080.png" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="code image/c5.png">
+                    <img src="code image/c5.png" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="code image/DSC_6996.png">
+                    <img src="code image/DSC_6996.png" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="code image/DSC_7797.png">
+                    <img src="code image/DSC_7797.png" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="code image/DSC_6614.png">
+                    <img src="code image/DSC_6614.png" alt="Rails">
+                </a>
             </div>
 
-            <div class="w3-col l6 s6">
-              <img src="code image/DSCF2080.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/DSC_7797.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/c2.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/DSC_6614.png" style="width:100%" onclick="onClick(this)">            
-            </div>
+        </div>
 
-            
-          </div>
+    </div>
+
+</div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
           <!-- End photo grid -->
 
             <!-- Pagination -->
@@ -311,19 +309,7 @@ DEMO
           <br>
 
 
-        
-
-
-                <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black w3-animate-opacity " style="padding-top:0;" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding">
-      <img id="img01" class="w3-image w3-center" style="max-height: 800px; max-width: 900px;">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-
+      
 
           <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center" style="max-width: 600px">
@@ -366,17 +352,7 @@ function w3_close() {
 }
 
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
 </script>
-
 
 
   

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Sinh Tung</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -19,12 +21,12 @@
   p  {font-family: 'Urbanist', sans-serif; font-size: 13px;}
   a {font-weight: 200;}
   .w3-row-padding img {margin-bottom: 15px; cursor: pointer;}
-  .w3-row-padding img:hover{opacity: 0.8;}
+  .w3-row-padding img:hover{opacity: 1;}
   hr {border-top: 0.5px solid black;}
 
 
 .w3-row img {margin-bottom: 2px; cursor: pointer; padding-right: 2px;}
-  .w3-row img:hover{opacity: 0.8;}
+  .w3-row img:hover{opacity: 1;}
   hr {border-top: 0.5px solid black;}
   
   .tungphoto {
@@ -116,7 +118,7 @@ DEPENDENCIES
 
     padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
     position: var(--textUnderlinedPosition, relative) !important;
-    z-index: var(--textUnderlinedZindex, 1) !important;
+    z-index: var(--textUnderlinedZindex, 0) !important;
 
     /*
         1. I use pixels units because others units (em, rem, vw, vh, etc) can
@@ -204,31 +206,6 @@ DEMO
 }
 
 
-.w3-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.97); /* Black w/ opacity */
-
-}
-.w3-modal-content {
-  width: 100%;
-  max-width: 850px;
-
-  display: flex;
-  align-items: center;
-  min-height: calc(100% - 0rem);
- 
-
-}
-
-
 
 </style>
 </head>
@@ -295,19 +272,19 @@ DEMO
           <div class="w3-row" >
 
             <div class="w3-col l6 s6">
-              <img src="code image/DSC_7803.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/c1.png" style="width:100%"onclick="onClick(this)">
-              <img src="code image/c5.png" style="width:100%"onclick="onClick(this)">
-              <img src="code image/DSC_6996.png" style="width:100%" onclick="onClick(this)">
+              <img src="code image/DSC_7803.png" style="width:100%" >
+              <img src="code image/c1.png" style="width:100%">
+              <img src="code image/c5.png" style="width:100%">
+              <img src="code image/DSC_6996.png" style="width:100%" >
               
               
             </div>
 
             <div class="w3-col l6 s6">
-              <img src="code image/DSCF2080.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/DSC_7797.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/c2.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/DSC_6614.png" style="width:100%" onclick="onClick(this)">            
+              <img src="code image/DSCF2080.png" style="width:100%" >
+              <img src="code image/DSC_7797.png" style="width:100%" >
+              <img src="code image/c2.png" style="width:100%" >
+              <img src="code image/DSC_6614.png" style="width:100%" >            
             </div>
 
             
@@ -341,13 +318,13 @@ DEMO
           <div class="w3-row" >
 
             <div class="w3-col s6">
-              <img src="code image/Draw 8.png" style="width:100%" onclick="onClick(this)">
-              <img src="code image/draw 5.5.png" style="width:100%" onclick="onClick(this)">
+              <img src="code image/Draw 8.png" style="width:100%" >
+              <img src="code image/draw 5.5.png" style="width:100%" >
               
             </div>
 
             <div class="w3-col s6">
-              <img src="code image/draw 7.png" style="width:100%" onclick="onClick(this)">
+              <img src="code image/draw 7.png" style="width:100%" >
               
               
             </div>
@@ -362,16 +339,6 @@ DEMO
 
           </div>
           <!-- End graphic Section -->
-
-
-                <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal  w3-animate-opacity"  style="padding-top:0px;" onclick="this.style.display='none'">
-    <span class="w3-button  w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding" >
-      <img id="img01" class="w3-image w3-center" style="max-width: 100%; max-height: 790px;">
-      <p id="caption"></p>
-    </div>
-  </div>
 
 
   <hr>
@@ -398,10 +365,6 @@ DEMO
     </div>
 
 
-
-
-
-
     <!-- End page content -->
 
 
@@ -418,14 +381,6 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
 
 </script>
