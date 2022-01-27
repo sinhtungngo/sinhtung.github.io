@@ -204,7 +204,29 @@ DEMO
 }
 
 
+.w3-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 
+}
+.w3-modal-content {
+  width: 100%;
+  max-width: 850px;
+
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 0rem);
+ 
+
+}
 
 
 
@@ -307,7 +329,7 @@ DEMO
 
 
           <!-- Graphic Section -->
-        <div class="w3-content w3-justify" style="max-width:600px">
+        <div class="w3-content w3-justify" style="max-width:600px" id="graphic">
             <div class="w3-center">
               <h2 class="w3-text-dark-grey " style="margin-left: 0px">G r a p h i c</h2>
               <p>" Everything you can imagine is real." </p>
@@ -334,7 +356,7 @@ DEMO
 
           <!-- read more -->
              <div class="page w3-center w3-padding-32">
-                <a href="#" class="r-link linkread text-underlined">get more</a>
+                <a href="#graphic" class="r-link linkread text-underlined">get more</a>
              </div>
 
 
@@ -343,13 +365,14 @@ DEMO
 
 
                 <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black w3-animate-opacity " style="padding-top:0;" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding">
-      <img id="img01" class="w3-image w3-center" style="max-height: 800px; max-width: 900px;">
+  <div id="modal01" class="w3-modal  w3-animate-opacity"  style="padding-top:0px;" onclick="this.style.display='none'">
+    <span class="w3-button  w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding" >
+      <img id="img01" class="w3-image w3-center" style="max-width: 100%; max-height: 790px;">
       <p id="caption"></p>
     </div>
   </div>
+
 
   <hr>
 
