@@ -23,7 +23,8 @@
     transition: .5s;
   }
   .fa:hover {
-    transform: scale(1.5); }
+    transform: scale(1.3);
+    color: #6eefff; }
 
     .w3-logo {
     transition: .5s;
