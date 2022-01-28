@@ -131,22 +131,22 @@ html, body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url("code image/c7.png");
+  background-image: url("code image/c7.jpg");
 }
 .card:nth-child(2):before {
-  background-image: url("code image/DSC_6614.png");
+  background-image: url("code image/DSC_6614.jpg");
 }
 .card:nth-child(3):before {
-  background-image: url("code image/DSC_7337.png");
+  background-image: url("code image/DSC_7337.jpg");
 }
 .card:nth-child(4):before {
-  background-image: url("code image/DSC_7797.png");
+  background-image: url("code image/DSC_7797.jpg");
 }
 .card:nth-child(5):before {
-  background-image: url("code image/c2.png");
+  background-image: url("code image/c2.jpg");
 }
 .card:nth-child(6):before {
-  background-image: url("code image/c1.png");
+  background-image: url("code image/c1.jpg");
 }
 
 .content {
