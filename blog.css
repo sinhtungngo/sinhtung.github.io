@@ -69,8 +69,8 @@ html, body {
 
 .page-content {
   display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
+  grid-gap: 0.3rem;
+  padding: 0rem;
   max-width: 1024px;
   margin: 0 auto;
   font-family: var(--font-sans);
@@ -102,7 +102,7 @@ html, body {
 }
 @media (min-width: 600px) {
   .card {
-    height: 250px;
+    height: 300px;
   }
 }
 .card:before {
@@ -239,6 +239,7 @@ html, body {
     transition-duration: 0s;
   }
 }
+
 
 /* blog main */
 
