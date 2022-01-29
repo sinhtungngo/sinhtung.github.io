@@ -249,7 +249,7 @@ html, body {
   width: 100%;
   padding: 0% 0%;
   box-sizing: border-box;
-  height: 40vh;
+  height: 55vh;
 }
 
 
@@ -263,14 +263,14 @@ html, body {
 }
 
 .box > img {
-  width: 200%;
-  height: calc(120% - 0vh);
+  width: 100%;
+  height: calc(100% - 0vh);
   object-fit: cover; 
   transition: .5s;
 }
 
 
-.box:hover { flex: 1 1 30%; }
+.box:hover { flex: 1 1 21%; }
 .box:hover > img {
   width: 100%;
   height: 100%;
