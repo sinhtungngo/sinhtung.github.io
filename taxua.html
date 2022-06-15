@@ -7,17 +7,19 @@
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-  <link rel="stylesheet" href="blog.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,662;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,662;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <style>
-  
- 
-
+  body , h1 , h2 , h3 {font-family: 'Urbanist', sans-serif;}
+  h4 {font-family: 'Urbanist', sans-serif; font-size: 21px;}
+  h6 {font-family: 'Urbanist', sans-serif; font-size: 16px;}
+  p  {font-family: 'Urbanist', sans-serif; font-size: 13px; font-weight: 200}
+  a {font-weight: 200;}
+  .w3-row-padding img {margin-bottom: 12px}
+  hr {border-top: 0.5px solid black;}
 
 
 </style>
@@ -25,32 +27,34 @@
 
 
 
-<body class="w3-light-grey w3-content" style="max-width: 1500px">
+<body class="w3-light-grey w3-content" style="max-width: 2100px">
 
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width: 300px;" id="mySidebar"><br>
     <div class="w3-logo">
-      <a href="index.html"><img src="code image/logo 2.png" class="w3-center w3-padding-64" style="width: 33%"></a>
+      <a href="index.html"><img src="code image/logo 2.png" class="w3-center w3-padding-64" style="width: 21%"></a>
     </div> 
-    <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button">About me</a>
-    <a href="photo.html" onclick="w3_close()" class="w3-bar-item w3-button">Photography</a>
-    <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+
+    <a href="blog.html" onclick="w3_close()" class="w3-bar-item link link--metis">story</a>
+    <a href="photo.html" onclick="w3_close()" class="w3-bar-item link link--metis">visual</a>
+    <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item link link--metis">about</a>
 
     <div class="w3-bar-item w3-center w3-large w3-padding-64 w3-display-bottomleft">
       
-      <a href="https://www.facebook.com/ngosinhtung/"><i class="fa fa-facebook-official w3-hover-opacity "></i></a>
-      <a href="https://www.instagram.com/gosihtug/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <a href="#"><i class="fa fa-youtube w3-hover-opacity"></i></a> 
-      <a href="#"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-
-    <p class="w3-small">Copyright 2022 by <a href="#" target="_blank" class="w3-hover-text-green">Sinh Tung Ngo</a></p>
+       <a href="https://www.facebook.com/ngosinhtung/"><i style="font-size: 13px" class="fa fa-facebook-official w3-hover-opacity "></i></a> 
+       <br>
+      <a href="https://www.instagram.com/gositung/"><i style="font-size: 13px" class="fa fa-instagram w3-hover-opacity"></i></a>
+      <br>
+      <a href="https://vimeo.com/gositung"><i style="font-size: 13px" class="fa fa-vimeo w3-hover-opacity"></i></a>
+      <br>
+      <a href="https://www.linkedin.com/in/gositung/"><i style="font-size: 13px" class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
 
    </nav>
 
    <!-- Top menu on small screens -->
    <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-16">
-      <a href="index.html"><img src="code image/logo 2.png" class="w3-left w3-padding" style="width: 15%"></a>
+      <a href="index.html"><img src="code image/logo 2.png" class="w3-left w3-padding" style="width: 20%"></a>
     <a href="javascript:void(0)" class="w3-right w3-button w3-black" onclick="w3_open()">☰</a>
    </header>
 
@@ -61,9 +65,7 @@
   <div class="w3-main" style="margin-left:300px">
 
     <!-- Push down content on small screens --> 
-    <div class="w3-hide-large" style="margin-top:50px;"></div>
-
-    <div class="w3-container w3-light-grey w3-text-dark-grey w3-padding-32">
+    <div class="w3-hide-large" style="margin-top:80px;"></div>
 
 
       <h4 class="w3-center" style="margin-top: 300px ;font-family: 'Quicksand', sans-serif; font-size: 34px;">COMING SOOOOON !!!</h4>
@@ -73,15 +75,14 @@
 
 
 
- <!-- Footer -->
-  <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge w3-center" style="max-width: 600px">
-
-      <a href="https://www.facebook.com/ngosinhtung/"><i class="fa fa-facebook-official w3-hover-opacity "></i></a>
-      <a href="https://www.instagram.com/gosihtug/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center" style="max-width: 600px">
+     <a href="https://www.facebook.com/ngosinhtung/"><i class="fa fa-facebook-official w3-hover-opacity "></i></a>
+      <a href="https://www.instagram.com/gositung/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
       <a href="https://www.linkedin.com/in/gositung/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
       <a href="https://vimeo.com/gositung"><i class="fa fa-vimeo w3-hover-opacity"></i></a>
-      
-    <p class="w3-medium">Copyright 2021 by <a href="#" target="_blank" class="w3-hover-text-green">Sinh Tung Ngo</a></p>
+
+        <p class="w3-medium">Copyright 2022 by Tung<a href="#" target="_blank" class="w3-hover-text-blue">. </a></p>
   <!-- End footer -->
   </footer>
 
